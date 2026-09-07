@@ -1,0 +1,526 @@
+/* ================================
+   MANAGE COMPANIES PAGE
+================================ */
+
+.manage-companies-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.manage-companies-header {
+  max-width: 1200px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.manage-companies-header h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #172033;
+}
+
+.manage-companies-header p {
+  margin: 0;
+  color: #687386;
+  font-size: 15px;
+}
+
+.companies-back-button {
+  border: none;
+  background: #172033;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.companies-back-button:hover {
+  background: #27344d;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   ADD COMPANY BUTTON
+================================ */
+
+.companies-top-actions {
+  max-width: 1200px;
+  margin: 0 auto 18px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-company-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.18);
+}
+
+.add-company-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   ADD COMPANY FORM
+================================ */
+
+.company-form-card {
+  max-width: 1000px;
+  margin: 0 auto 28px;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+/* ================================
+   FORM HEADER
+================================ */
+
+.company-form-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.company-form-header h2 {
+  margin: 0 0 6px;
+  color: #172033;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.company-form-header p {
+  margin: 0;
+  color: #7a8494;
+  font-size: 14px;
+}
+
+.close-company-form {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 7px;
+  background: #f1f3f7;
+  color: #596273;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.close-company-form:hover {
+  background: #e7eaf0;
+  color: #1f2937;
+}
+
+/* ================================
+   FORM BODY
+================================ */
+
+.company-form-card form {
+  padding: 30px;
+}
+
+.company-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 22px;
+}
+
+.company-form-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.company-form-field label {
+  margin-bottom: 8px;
+  color: #303949;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.company-form-field input,
+.company-form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.company-form-field input {
+  height: 44px;
+  padding: 0 13px;
+}
+
+.company-form-field textarea {
+  padding: 12px 13px;
+  min-height: 125px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.company-form-field input::placeholder,
+.company-form-field textarea::placeholder {
+  color: #a0a8b5;
+}
+
+.company-form-field input:focus,
+.company-form-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+/* Description takes full width */
+
+.company-description-field {
+  grid-column: 1 / -1;
+}
+
+/* ================================
+   FORM BUTTONS
+================================ */
+
+.company-form-buttons {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #edf0f4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.cancel-company-button,
+.save-company-button {
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cancel-company-button {
+  border: 1px solid #d8dee8;
+  background: #ffffff;
+  color: #4b5563;
+}
+
+.cancel-company-button:hover {
+  background: #f7f8fa;
+  border-color: #c8ced8;
+}
+
+.save-company-button {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.16);
+}
+
+.save-company-button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.save-company-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ================================
+   COMPANIES TABLE CARD
+================================ */
+
+.companies-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+}
+
+.companies-card-header {
+  min-height: 68px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8ecf2;
+}
+
+.companies-card-header h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.companies-card-header span {
+  background: #eef4ff;
+  color: #2563eb;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================================
+   TABLE
+================================ */
+
+.companies-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.companies-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.companies-table th {
+  background: #f8fafc;
+  color: #697386;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e9f0;
+  white-space: nowrap;
+}
+
+.companies-table td {
+  padding: 16px;
+  color: #4b5563;
+  font-size: 13px;
+  border-bottom: 1px solid #edf0f4;
+  vertical-align: middle;
+}
+
+.companies-table tbody tr:hover {
+  background: #fafbfe;
+}
+
+.companies-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.companies-table td strong {
+  color: #172033;
+  font-weight: 650;
+}
+
+.companies-table td a {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.companies-table td a:hover {
+  text-decoration: underline;
+}
+
+.delete-company-button {
+  border: none;
+  background: #fff1f2;
+  color: #dc2626;
+  padding: 8px 13px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-company-button:hover {
+  background: #fee2e2;
+}
+
+/* ================================
+   EMPTY / LOADING / ERROR
+================================ */
+
+.companies-message {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 12px;
+  color: #697386;
+}
+
+.companies-error {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff7f7;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.companies-error p {
+  margin: 0 0 15px;
+  color: #dc2626;
+}
+
+.companies-error button {
+  border: none;
+  background: #dc2626;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.empty-companies {
+  padding: 55px 20px;
+  text-align: center;
+  color: #7a8494;
+  font-size: 14px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .manage-companies-page {
+    padding: 28px 20px;
+  }
+
+  .company-form-card {
+    max-width: 100%;
+  }
+
+  .companies-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .manage-companies-page {
+    padding: 22px 15px;
+  }
+
+  .manage-companies-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .manage-companies-header h1 {
+    font-size: 25px;
+  }
+
+  .companies-back-button {
+    width: 100%;
+  }
+
+  .companies-top-actions {
+    justify-content: stretch;
+  }
+
+  .add-company-button {
+    width: 100%;
+  }
+
+  .company-form-header {
+    padding: 20px;
+  }
+
+  .company-form-card form {
+    padding: 20px;
+  }
+
+  .company-form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .company-description-field {
+    grid-column: auto;
+  }
+
+  .company-form-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-company-button,
+  .save-company-button {
+    width: 100%;
+  }
+
+  .companies-card-header {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .manage-companies-page {
+    padding: 18px 12px;
+  }
+
+  .manage-companies-header h1 {
+    font-size: 23px;
+  }
+
+  .company-form-header h2 {
+    font-size: 18px;
+  }
+
+  .companies-card-header h2 {
+    font-size: 17px;
+  }
+
+  .companies-card-header span {
+    font-size: 11px;
+  }
+}

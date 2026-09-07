@@ -1,0 +1,32 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #f4f7fb;
+}
+.dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.dashboard-buttons button {
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #1d4ed8;
+}

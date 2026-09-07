@@ -1,0 +1,326 @@
+.recruiter-jobs-container {
+  min-height: 100vh;
+  padding: 40px 50px;
+  background: #f6f8fc;
+  box-sizing: border-box;
+}
+
+.recruiter-jobs-header {
+  max-width: 1150px;
+  margin: 0 auto 35px;
+  padding: 25px 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recruiter-jobs-header h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 32px;
+}
+
+.recruiter-jobs-header p {
+  margin: 7px 0 0;
+  color: #697386;
+  font-size: 14px;
+}
+
+.recruiter-jobs-header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.back-button,
+.create-job-button {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-button {
+  background: #eef0f5;
+  color: #374151;
+}
+
+.back-button:hover {
+  background: #e1e4eb;
+}
+
+.create-job-button {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.create-job-button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.recruiter-jobs-list {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.recruiter-job-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.08);
+
+  transition: 0.25s ease;
+}
+
+.recruiter-job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(30, 41, 59, 0.12);
+}
+
+.job-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  border-bottom: 1px solid #edf0f5;
+  padding-bottom: 20px;
+}
+
+.job-card-top h2 {
+  margin: 0 0 8px;
+  color: #172033;
+  font-size: 23px;
+}
+
+.company-name {
+  margin: 0;
+  color: #697386;
+  font-size: 14px;
+}
+
+.employment-badge {
+  background: #ede9fe;
+  color: #5b21b6;
+
+  padding: 7px 13px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.job-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  padding: 22px 0;
+}
+
+.job-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px;
+  background: #f8f9fc;
+  border-radius: 10px;
+}
+
+.job-info-item > span {
+  font-size: 20px;
+}
+
+.job-info-item small {
+  display: block;
+  margin-bottom: 4px;
+  color: #8a94a6;
+  font-size: 11px;
+}
+
+.job-info-item strong {
+  display: block;
+  color: #374151;
+  font-size: 13px;
+}
+
+.job-description {
+  padding: 18px 0;
+  border-top: 1px solid #edf0f5;
+}
+
+.job-description h3 {
+  margin: 0 0 8px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.job-description p {
+  margin: 0;
+  color: #697386;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.recruiter-job-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  padding-top: 20px;
+  border-top: 1px solid #edf0f5;
+}
+
+.recruiter-job-actions button {
+  border: none;
+  padding: 10px 17px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.applicants-button {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.applicants-button:hover {
+  background: #e0e7ff;
+}
+
+.edit-job-button {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.edit-job-button:hover {
+  background: #ffedd5;
+}
+
+.delete-job-button {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.delete-job-button:hover {
+  background: #fee2e2;
+}
+
+.recruiter-jobs-message {
+  max-width: 1150px;
+  margin: 70px auto;
+
+  text-align: center;
+
+  color: #697386;
+  font-size: 17px;
+}
+
+.empty-jobs {
+  max-width: 550px;
+  margin: 80px auto;
+  padding: 45px 30px;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.08);
+}
+
+.empty-jobs-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.empty-jobs h2 {
+  margin: 0 0 10px;
+  color: #172033;
+}
+
+.empty-jobs p {
+  margin: 0 0 25px;
+  color: #697386;
+}
+
+.empty-jobs button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: #ffffff;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-jobs button:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 900px) {
+  .recruiter-jobs-container {
+    padding: 30px 20px;
+  }
+
+  .job-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .recruiter-jobs-container {
+    padding: 20px 15px;
+  }
+
+  .recruiter-jobs-header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .recruiter-jobs-header-buttons {
+    width: 100%;
+  }
+
+  .back-button,
+  .create-job-button {
+    flex: 1;
+  }
+
+  .job-card-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .job-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruiter-job-actions {
+    flex-direction: column;
+  }
+
+  .recruiter-job-actions button {
+    width: 100%;
+  }
+}
